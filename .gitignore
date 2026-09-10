@@ -1,0 +1,15 @@
+# Segredos - NUNCA commitar
+.env
+
+# Ambiente virtual
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# PDFs gerados (dados pessoais, não fazem sentido no repositório)
+output/
+
+# IDE
+.idea/

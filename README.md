@@ -5,7 +5,7 @@ Bot pessoal para automatizar parte do processo de candidatura a vagas: a partir 
 ## Como funciona
 
 1. **Scraping** (`job-apply-bot/scrapers/`) — abre a vaga com Playwright e extrai o texto relevante (descrição + requisitos), cortando ruído institucional (benefícios, redes sociais, etc.).
-2. **Tailoring** (`job-apply-bot/tailoring/`) — manda o texto da vaga e os bullets/projetos do `data/resume_master.json` (cada um com um ID) para o Gemini, que devolve apenas os IDs escolhidos e a ordem — nunca texto reescrito, então não há risco de o modelo inventar experiência.
+2. **Tailoring** (`job-apply-bot/tailoring/`) — manda o texto da vaga e os bullets/projetos do `job-apply-bot/data/resume_master.json` (cada um com um ID) para o Gemini, que devolve apenas os IDs escolhidos e a ordem — nunca texto reescrito, então não há risco de o modelo inventar experiência.
 3. **Geração do currículo** (`job-apply-bot/resume_builder/`) — renderiza um template HTML (Jinja2) com os bullets selecionados e converte para PDF com WeasyPrint.
 4. **Notificação** (`job-apply-bot/notifier/`) — bot do Telegram que recebe o link da vaga e devolve o PDF, ou repassa perguntas do formulário para gerar respostas.
 
@@ -33,7 +33,7 @@ TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
 ```
 
-Preencha seus dados em `data/resume_master.json` (experiências, projetos, skills — cada bullet com um `id` único, usado pelo tailoring).
+Preencha seus dados em `job-apply-bot/data/resume_master.json` (experiências, projetos, skills — cada bullet com um `id` único, usado pelo tailoring).
 
 ## Uso
 
@@ -66,17 +66,17 @@ PYTHONPATH=job-apply-bot python job-apply-bot/notifier/telegram_bot.py
 ## Estrutura
 
 ```
+main.py                    # CLI (roda com job-apply-bot no PYTHONPATH)
 job-apply-bot/
-├── config.py           # paths, chaves de API, filtros de vaga
-├── errors.py            # traduz erros técnicos em mensagens legíveis
-├── pipeline.py           # orquestra scraping -> tailoring -> PDF
-├── main.py
-├── scrapers/             # extração de dados da vaga (por plataforma)
-├── tailoring/            # integração com o Gemini
-├── resume_builder/       # template + geração de PDF
-└── notifier/             # bot do Telegram
-data/
-└── resume_master.json    # currículo mestre (fonte única de verdade)
+├── config.py               # paths, chaves de API, filtros de vaga
+├── errors.py               # traduz erros técnicos em mensagens legíveis
+├── pipeline.py             # orquestra scraping -> tailoring -> PDF
+├── data/
+│   └── resume_master.json  # currículo mestre (fonte única de verdade)
+├── scrapers/               # extração de dados da vaga (por plataforma)
+├── tailoring/              # integração com o Gemini
+├── resume_builder/         # template + geração de PDF
+└── notifier/               # bot do Telegram
 ```
 
 ## Aviso

@@ -13,3 +13,6 @@ output/
 
 # IDE
 .idea/
+
+# Currículo mestre real (dados pessoais) - usar resume_master.example.json como base
+job-apply-bot/data/resume_master.json

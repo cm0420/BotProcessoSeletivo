@@ -53,7 +53,13 @@ cp .env.example .env
 | `TELEGRAM_BOT_TOKEN` | token do bot (opcional, criado no [@BotFather](https://t.me/BotFather)) |
 | `TELEGRAM_CHAT_ID` | seu chat ID (opcional) |
 
-Preencha `job-apply-bot/data/resume_master.json` com experiências, projetos e skills. Cada bullet precisa de um `id` único.
+Crie o seu currículo mestre a partir do exemplo e preencha com seus dados, experiências, projetos e skills. Cada bullet precisa de um `id` único:
+
+```bash
+cp job-apply-bot/data/resume_master.example.json job-apply-bot/data/resume_master.json
+```
+
+O `resume_master.json` fica fora do git (`.gitignore`), porque contém dados pessoais.
 
 ### `> uso`
 

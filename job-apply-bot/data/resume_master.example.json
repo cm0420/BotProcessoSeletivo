@@ -2,18 +2,16 @@
   "personal": {
     "name": "Miguel Costa",
     "location": "Diamantina, MG, Brasil",
-    "email": "miguelmoreiracosta6@gmail.com",
+    "email": "seu.email@exemplo.com",
     "phone": "+55 00 00000-0000",
     "linkedin": "https://www.linkedin.com/in/miguelmcosta",
     "github": "https://github.com/cm0420",
     "portfolio": "https://miguel-costa-dev.vercel.app/"
   },
-
   "objective_variants": {
     "default": "Desenvolvedor com base sólida em engenharia de software e resolução de problemas, buscando aplicar conhecimentos acadêmicos e profissionais em projetos reais, com foco em soluções eficientes em ambientes dinâmicos e colaborativos.",
     "note": "O pipeline de tailoring deve gerar uma variante nova por vaga a partir da descrição, não reusar apenas esta default."
   },
-
   "education": [
     {
       "institution": "UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri",
@@ -23,14 +21,12 @@
       "end": "2027"
     }
   ],
-
   "courses": [
     {
       "name": "Spring Boot REST APIs: do zero à AWS e GCP com Java e Docker",
       "year": "2026"
     }
   ],
-
   "experience": [
     {
       "id": "gafit",
@@ -39,79 +35,215 @@
       "start": "2025-09",
       "end": "2026-03",
       "bullets": [
-        {"id": "gafit-1", "text": "Desenvolvimento de aplicações web e mobile.", "tags": ["fullstack", "web", "mobile"]},
-        {"id": "gafit-2", "text": "Implementação de backend utilizando PHP e Laravel.", "tags": ["backend", "php", "laravel"]},
-        {"id": "gafit-3", "text": "Gerenciamento e otimização de bancos de dados MySQL.", "tags": ["database", "mysql", "sql"]},
-        {"id": "gafit-4", "text": "Desenvolvimento frontend utilizando React Native.", "tags": ["frontend", "mobile", "react-native"]},
-        {"id": "gafit-5", "text": "Colaboração no planejamento de funcionalidades e melhorias de sistemas.", "tags": ["planning", "collaboration", "soft-skill"]},
-        {"id": "gafit-6", "text": "Suporte direto ao cliente e assistência técnica.", "tags": ["client-support", "soft-skill"]}
+        {
+          "id": "gafit-1",
+          "text": "Desenvolvimento de aplicações web e mobile.",
+          "tags": [
+            "fullstack",
+            "web",
+            "mobile"
+          ]
+        },
+        {
+          "id": "gafit-2",
+          "text": "Implementação de backend utilizando PHP e Laravel.",
+          "tags": [
+            "backend",
+            "php",
+            "laravel"
+          ]
+        },
+        {
+          "id": "gafit-3",
+          "text": "Gerenciamento e otimização de bancos de dados MySQL.",
+          "tags": [
+            "database",
+            "mysql",
+            "sql"
+          ]
+        },
+        {
+          "id": "gafit-4",
+          "text": "Desenvolvimento frontend utilizando React Native.",
+          "tags": [
+            "frontend",
+            "mobile",
+            "react-native"
+          ]
+        },
+        {
+          "id": "gafit-5",
+          "text": "Colaboração no planejamento de funcionalidades e melhorias de sistemas.",
+          "tags": [
+            "planning",
+            "collaboration",
+            "soft-skill"
+          ]
+        },
+        {
+          "id": "gafit-6",
+          "text": "Suporte direto ao cliente e assistência técnica.",
+          "tags": [
+            "client-support",
+            "soft-skill"
+          ]
+        }
       ]
     }
   ],
-
   "projects": [
     {
       "id": "portalescolar",
       "name": "PortalEscolar",
       "type": "API REST",
       "description": "API para gestão escolar construída com Spring Boot 4.x, autenticação via JWT, DTOs mapeados com MapStruct, migrações versionadas com Flyway e testes de integração com Testcontainers.",
-      "tech": ["Java", "Spring Boot", "JWT", "MapStruct", "Flyway", "Testcontainers"],
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "JWT",
+        "MapStruct",
+        "Flyway",
+        "Testcontainers"
+      ],
       "url": "https://github.com/cm0420/PortalEscolar",
-      "tags": ["backend", "java", "spring-boot", "api", "auth", "testing"]
+      "tags": [
+        "backend",
+        "java",
+        "spring-boot",
+        "api",
+        "auth",
+        "testing"
+      ]
     },
     {
       "id": "ecommerce-api",
       "name": "E-Commerce API",
       "type": "API REST",
       "description": "API de e-commerce em Java 21 e Spring Boot 3.5, com Spring Security, autenticação JWT, padrão Strategy para meios de pagamento e testes com Testcontainers e RestAssured.",
-      "tech": ["Java 21", "Spring Boot", "Spring Security", "JWT", "Strategy Pattern", "Testcontainers", "RestAssured"],
+      "tech": [
+        "Java 21",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "Strategy Pattern",
+        "Testcontainers",
+        "RestAssured"
+      ],
       "url": "https://github.com/cm0420/E-Commerce",
-      "tags": ["backend", "java", "spring-boot", "api", "security", "payments", "testing", "design-patterns"]
+      "tags": [
+        "backend",
+        "java",
+        "spring-boot",
+        "api",
+        "security",
+        "payments",
+        "testing",
+        "design-patterns"
+      ]
     },
     {
       "id": "evendasartesanato",
       "name": "EvendasArtesanato",
       "type": "Monólito modular",
       "description": "Sistema de vendas para uma loja de artesanato real, com módulos de catálogo, estoque, pedidos, pagamento e envio. Usa lock pessimista e reserva de estoque para lidar com concorrência em compras.",
-      "tech": ["Spring Boot 4", "PostgreSQL", "Arquitetura modular"],
+      "tech": [
+        "Spring Boot 4",
+        "PostgreSQL",
+        "Arquitetura modular"
+      ],
       "url": "https://github.com/cm0420/EvendasArtesanato",
-      "tags": ["backend", "java", "spring-boot", "postgresql", "modular-monolith", "concurrency", "real-client"]
+      "tags": [
+        "backend",
+        "java",
+        "spring-boot",
+        "postgresql",
+        "modular-monolith",
+        "concurrency",
+        "real-client"
+      ]
     },
     {
       "id": "oficinawebapplication",
       "name": "OficinaWebApplication",
       "type": "Sistema de gestão",
       "description": "Sistema de gestão para oficina mecânica: cadastro de clientes, acompanhamento do fluxo de serviço, faturamento automatizado e relatórios financeiros, com controle de acesso por perfil. Primeiro projeto em Spring Boot.",
-      "tech": ["Java", "Spring Boot", "MySQL"],
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "MySQL"
+      ],
       "url": "https://github.com/cm0420/OficinaWebApplication",
-      "tags": ["backend", "java", "spring-boot", "mysql", "rbac", "reporting"]
+      "tags": [
+        "backend",
+        "java",
+        "spring-boot",
+        "mysql",
+        "rbac",
+        "reporting"
+      ]
     },
     {
       "id": "projetofinal",
       "name": "ProjetoFinal",
       "type": "Desktop",
       "description": "Sistema de gestão de oficina desenvolvido em Java puro com interface gráfica em JavaFX, projeto final da disciplina de Programação Orientada a Objetos.",
-      "tech": ["Java", "JavaFX", "POO"],
+      "tech": [
+        "Java",
+        "JavaFX",
+        "POO"
+      ],
       "url": "https://github.com/cm0420/ProjetoFinal",
-      "tags": ["desktop", "java", "javafx", "oop", "academic"]
+      "tags": [
+        "desktop",
+        "java",
+        "javafx",
+        "oop",
+        "academic"
+      ]
     }
   ],
-
   "skills": {
-    "languages": ["Java", "Python", "PHP", "SQL", "C#"],
-    "frameworks_and_tools": [
-      "Spring Boot", "Spring Security", "Laravel", "React Native", "React.js",
-      "HTML5", "CSS3", "Docker", "Postman", ".NET", "JWT", "MapStruct",
-      "Flyway", "Testcontainers", "RestAssured", "Git", "GitHub"
+    "languages": [
+      "Java",
+      "Python",
+      "PHP",
+      "SQL",
+      "C#"
     ],
-    "databases": ["MySQL", "PostgreSQL"]
+    "frameworks_and_tools": [
+      "Spring Boot",
+      "Spring Security",
+      "Laravel",
+      "React Native",
+      "React.js",
+      "HTML5",
+      "CSS3",
+      "Docker",
+      "Postman",
+      ".NET",
+      "JWT",
+      "MapStruct",
+      "Flyway",
+      "Testcontainers",
+      "RestAssured",
+      "Git",
+      "GitHub"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL"
+    ]
   },
-
   "languages_spoken": [
-    {"language": "Português", "level": "Nativo"},
-    {"language": "Inglês", "level": "Avançado"}
+    {
+      "language": "Português",
+      "level": "Nativo"
+    },
+    {
+      "language": "Inglês",
+      "level": "Avançado"
+    }
   ],
-
   "profile_traits": [
     "Proatividade e organização",
     "Orientação a resultados",
